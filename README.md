@@ -1,13 +1,13 @@
-# Useful-Equations
+# EquationHub
+#### Version dev18.1.1.2
+EquationHub is a program that is currently in development that plans on containing most equations for solving. This program will eventually support graphs, but that will be in a much later version.
 
-This folder contains a collection of programs that the user will run. What the program can do is it asks the user which equation they want to use, they would then select it, and they would input the values. The program is also versatile so if the user is trying to find a missing value, they can select the option that they want to find, they would then input the known values, and the program will get you your answer.
+These are the following equations that are in the program
 
-**NOTE: this repository is going to be updated. Equations will be added in the future.
+# Power
 
-These are the following equations that are currently written:
+P = V * I
 
-**Power (P = V * I)**
-* P = Power 
-* V = Voltage 
-* I = Current
-
+P = Power
+V = Voltage
+I = Current
