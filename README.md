@@ -4,12 +4,12 @@ EquationHub is a program that is currently in development that plans on containi
 
 These are the following equations that are in the program
 
-# Power
+## Power
 ### ** Now with a new interface! **
 P = Power
 V = Voltage
 I = Current
 R = Resistance
 
-# Velocity
+## Velocity
 ### ** Coming soon! **
