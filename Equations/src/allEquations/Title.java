@@ -4,8 +4,8 @@ public class Title {
 	
 	// Name of the program
 	public String name = "EquationHub ";
-	// Version is measured by year.release.iteration.developmentday
-	public String version = "dev18.1.2.3a";
+	// Version is measured by year.release.developmentday
+	public String version = "dev18.3.6a";
 	
 	// A constructor that other classes can access
 	public String setTitle() {

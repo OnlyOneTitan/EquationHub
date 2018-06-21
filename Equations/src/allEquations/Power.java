@@ -4,16 +4,21 @@ import javax.swing.JOptionPane;
 
 public class Power {
 
+	// Initializes variables.
 	private int counter = 0;
 	private boolean v = false, i = false, r = false, p = false;
 	private double power = -1, voltage = -1, current = -1, resistance = -1;
 	private String power_ = "", voltage_ = "", current_ = "", resistance_ = "";
 	private boolean error = true, breakOut = false;
+	// Calls the Title class
 	Title title = new Title();
 	
 	public Power() {
+
+		// Keeps executing until the user either clicks cancel, x, or the user has inputted a value into two different inputs.
 		while(counter != 2 && breakOut == false) {
 			
+			// Power
 			while(error == true && counter != 2 && p == false && breakOut == false) {
 				try {
 					power_ = JOptionPane.showInputDialog(null, "Please enter your power. If blank, the program will try to solve it for you.", title.name + title.version, JOptionPane.PLAIN_MESSAGE);
@@ -39,7 +44,7 @@ public class Power {
 			}
 			
 			error = true;
-			
+			// Voltage
 			while(error == true && counter != 2 && v == false && breakOut == false) {
 				try {
 					voltage_ = JOptionPane.showInputDialog(null, "Please enter your voltage. If blank, the program will try to solve it for you.", title.name + title.version, JOptionPane.PLAIN_MESSAGE);
@@ -63,7 +68,7 @@ public class Power {
 			}
 			
 			error = true;
-			
+			// Current
 			while(error == true && counter != 2 && i == false && breakOut == false) {
 				try {
 					current_ = JOptionPane.showInputDialog(null, "Please enter your current. If blank, the program will try to solve it for you.", title.name + title.version, JOptionPane.PLAIN_MESSAGE);
@@ -87,7 +92,7 @@ public class Power {
 			}
 			
 			error = true;
-			
+			// Resistance
 			while(error == true && counter != 2 && r == false && breakOut == false) {
 				try {
 					resistance_ = JOptionPane.showInputDialog(null, "Please enter your resistance. If blank, the program will try to solve it for you.", title.name + title.version, JOptionPane.PLAIN_MESSAGE);
@@ -113,6 +118,7 @@ public class Power {
 			
 		}
 		
+		// Outputs
 		// I and R
 		if(power == -1 && voltage == -1 && current != -1 && resistance != -1) {
 			String output = title.setTitle();
